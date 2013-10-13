@@ -13,6 +13,9 @@ class MainPage(webapp2.RequestHandler):
 =======
     #Insert code the HTML code in the stuff below
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3d26a6f9c1024b7b941490ee029f4dc33488d022
+=======
 >>>>>>> 3d26a6f9c1024b7b941490ee029f4dc33488d022
 =======
 >>>>>>> 3d26a6f9c1024b7b941490ee029f4dc33488d022
