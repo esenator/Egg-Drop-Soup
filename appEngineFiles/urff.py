@@ -14,7 +14,7 @@ class MainPage(webapp2.RequestHandler):
     	<head>
     		<title>Test Page</title> 
     			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-					<link href="res/style.css" type="text/css" rel="stylesheet"/>
+					<link href="/res/style.css" type="text/css" rel="stylesheet"/>
 					<link href = "../rocky.gif" type = "image/gif" rel = "shortcut icon"/>
 			</head>
 			<body>
