@@ -12,13 +12,14 @@ class MainPage(webapp2.RequestHandler):
 
     self.response.out.write("""<html>
     	<head>
-    		<title>Event Details</title> 
+    		<title>Test Page</title> 
     			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-					<link href="EventDetails.css" type="text/css" rel="stylesheet"/>
+					<link href="../EventDetailsPage/EventDetails.css" type="text/css" rel="stylesheet"/>
 					<link href = "../rocky.gif" type = "image/gif" rel = "shortcut icon"/>
 			</head>
 			<body>
-				<p>This is a test</p>
+				<h1>This is a test</h1>
+				<p>Did it work?</p>
 			</body>
 		</html>""")
 
