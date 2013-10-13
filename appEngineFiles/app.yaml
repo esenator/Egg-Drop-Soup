@@ -7,7 +7,10 @@ threadsafe: yes
 handlers:
 - url: .*
   script: urff.app
+- url: /res
+  static_dir: res
 
 libraries:
 - name: webapp2
   version: "2.5.2"
+
