@@ -4,6 +4,7 @@ function pushToCal()
   // Connect calendar to spreadsheet
   var calendar = CalendarApp.getCalendarById('u.rochester.edu_c9dsli7b5hjgne96dk0l3g0i98@group.calendar.google.com');
   
+  // Number correspondes to column in spreadsheet. If you make changes to the spreadsheet, update these numbers
   var groupTypeNum = 0;
   var orgNameNum = 1;
   var descripNum = 2;
@@ -22,6 +23,8 @@ function pushToCal()
   var numValues = 0;
   for (var i = startRow; i < sheet.getLastRow(); i++)
   {
+    // var testVars = data[i]; // If you updated the spreadsheet, debug on this line for new values
+
     if( data[i][alreadyEntered]!= 'y') //Checks to see if event has already been entered into calendar
     {
       var newEventTitle = data[i][eventNameNum];
