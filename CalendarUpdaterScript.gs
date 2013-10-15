@@ -14,37 +14,39 @@ function pushToCal()
   var endTimeNum = 6;
   var eventNameNum = 7;
   var eventDateNum = 8;
-  var alreadyEntered = 10;
+  var eventLocationNum = 10;
+  var alreadyEntered = 11;
   
   var startRow = 1; // First row of the spreadsheet with entrees;
   var sheet = SpreadsheetApp.getActiveSheet();
-  var data = sheet.getSheetValues(startRow, 2, sheet.getLastRow(), sheet.getLastColumn());
+  var data = sheet.getSheetValues(startRow + 1, 2, sheet.getLastRow(), sheet.getLastColumn());
   
   var numValues = 0;
   for (var i = startRow; i < sheet.getLastRow(); i++)
   {
-    // var testVars = data[i]; // If you updated the spreadsheet, debug on this line for new values
+     var testVars = data[numValues]; // If you updated the spreadsheet, debug on this line for new values to use
 
     if( data[i][alreadyEntered]!= 'y') //Checks to see if event has already been entered into calendar
     {
-      var newEventTitle = data[i][eventNameNum];
-      var newEventDate = data[i][eventDateNum];
+      var newEventTitle = data[numValues][eventNameNum];
+      var newEventDate = data[numValues][eventDateNum];
 
       var newEventStartDate = new Date(newEventDate);
       var newEventEndDate = new Date(newEventDate);
-      var newEventStartTime = new Date(data[i][startTimeNum]);
-      var newEventEndTime = new Date(data[i][endTimeNum]);
+      var newEventStartTime = new Date(data[numValues][startTimeNum]);
+      var newEventEndTime = new Date(data[numValues][endTimeNum]);
       
-      newEventStartDate.setUTCHours(newEventStartTime.getUTCHours());
-      newEventEndDate.setUTCHours(newEventStartTime.getUTCHours());
-      newEventStartDate.setUTCHours(newEventStartTime.getUTCMinutes());
-      newEventEndDate.setUTCHours(newEventStartTime.getUTCMinutes());
-      newEventStartDate.setUTCHours(newEventStartTime.getUTCSeconds());
-      newEventEndDate.setUTCHours(newEventStartTime.getUTCSeconds());
+      newEventStartDate.setHours(newEventStartTime.getHours());
+      newEventEndDate.setHours(newEventEndTime.getHours());
+      newEventStartDate.setMinutes(newEventStartTime.getMinutes());
+      newEventEndDate.setMinutes(newEventEndTime.getMinutes());
+      newEventStartDate.setSeconds(newEventStartTime.getSeconds());
+      newEventEndDate.setSeconds(newEventEndTime.getSeconds());
+      
       
       var newEvent = calendar.createEvent(newEventTitle, newEventStartDate, newEventEndDate);
       
-      data[i][alreadyEntered] = 'y';
+      //data[i][alreadyEntered] = 'y';
     }
     numValues++;
   }
