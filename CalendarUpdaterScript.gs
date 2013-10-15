@@ -8,8 +8,8 @@ function pushToCal()
   var groupTypeNum = 0;
   var orgNameNum = 1;
   var descripNum = 2;
-  var FoodTypeNum = 3;
-  var LinkEventNum = 4;
+  var foodTypeNum = 3;
+  var linkEventNum = 4;
   var startTimeNum = 5;
   var endTimeNum = 6;
   var eventNameNum = 7;
@@ -45,8 +45,21 @@ function pushToCal()
       
       
       var newEvent = calendar.createEvent(newEventTitle, newEventStartDate, newEventEndDate);
+      newEvent.setLocation(data[numValues][eventLocationNum]);
+      newEvent.setDescription(data[numValues][orgNameNum]);
+      newEvent.setDescription(newEvent.getDescription() + "\n\n" + data[numValues][descripNum]);
       
-      //data[i][alreadyEntered] = 'y';
+      if (data[numValues][linkEventNum]!= null) // Adds link to the event description if link exists
+      {
+        newEvent.setDescription(newEvent.getDescription() + "\n\n" + data[numValues][linkEventNum]);
+      }
+      
+      if (data[numValues][foodTypeNum]!= null) // Adds a list of the provided food if it is provided
+      {
+        newEvent.setDescription(newEvent.getDescription() + "\n\n" + "Provided Food: " + data[numValues][foodTypeNum]);
+      }
+      
+      //data[numValues][alreadyEntered] = 'y';
     }
     numValues++;
   }
