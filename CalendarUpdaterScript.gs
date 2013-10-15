@@ -2,7 +2,6 @@
 function pushToCal()
 {
   // Connect calendar to spreadsheet
-  //var calendar = CalendarApp.getCalendarById('teml2idm8b01jg3iv9du7sr6t8@group.calendar.google.com');
   var calendar = CalendarApp.getCalendarById('u.rochester.edu_c9dsli7b5hjgne96dk0l3g0i98@group.calendar.google.com');
   var groupTypeNum = 0;
   var orgNameNum = 1;
