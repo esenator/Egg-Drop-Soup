@@ -11,7 +11,7 @@ Go to [this spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AiOcVR5f1l
 
 The CalendarUpdaterScript.gs is a script that is run on the Google spreadsheet that contains the form responses. To modify it for your own calendars, simply update the indicated lines in the script with your own calendar id. If you make any changes to the form itself, you should uncomment the indicated lines with a breakpoint on the following line and update the number variables with their new values.
 
-This project was going to be hosted as a webapp using Google's app engine 
+This project was going to be hosted as a webapp using Google's app engine, however, we eventually decided to host the site on aws so the appengineFiles folder can be ignored unless you wish to use it to jumpstart your own App Engine hosting. 
 
 Contributions:
 Ethan: Built form and cowrote calendarupdater 
