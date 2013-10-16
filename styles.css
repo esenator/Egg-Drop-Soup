@@ -25,6 +25,7 @@ span.big {
 
 p {
 	margin: 0pt;
+	text-align: center;
 }
 
 ul {
@@ -40,6 +41,8 @@ iframe {
 	margin: 0 auto;
 	display: block;
 	border: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 #date {
 	text-align: center;
