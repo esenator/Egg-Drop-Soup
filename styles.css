@@ -65,8 +65,7 @@ iframe {
 }
 
 #addEvent {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	margin-bottom: 30px;
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0.8);
