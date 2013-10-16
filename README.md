@@ -14,10 +14,10 @@ The CalendarUpdaterScript.gs is a script that is run on the Google spreadsheet t
 This project was going to be hosted as a webapp using Google's app engine 
 
 Contributions:
-Ethan: Built form and cowrote calendarupdater
-Quanzeng: Built calendar and cowrote calendarupdater
+Ethan: Built form and cowrote calendarupdater 
+Quanzeng: Built calendar and cowrote calendarupdater 
 Charlie: Wrote html and cowrote presentation
 Becky: Cowrote html and wrote css
 Samay: Set up webhost/Google App Engine
-Ruby: Wrote presentation
+Ruby: Wrote presentation 
 
