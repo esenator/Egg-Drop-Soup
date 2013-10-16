@@ -1,0 +1,65 @@
+body {
+	font-family: roboto, serif;
+	background-image: url("../images/Rush.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+h1 {
+	text-align: center;
+	font-size: 20pt;
+	margin-bottom: 0pt;
+}
+
+h2 {
+	text-align: center;
+	font-size: 16pt;
+	margin-top: 5pt;
+}
+
+span.big {
+	font-size: 14pt;
+}
+
+p {
+	margin: 0pt;
+}
+
+ul {
+	margin-top: 0pt;
+	margin-left: 20pt;
+}
+
+div {
+	margin-left: 50px;
+}
+
+iframe {
+	margin: 0 auto;
+	display: block;
+	border: 0;
+}
+#date {
+	text-align: center;
+	font-size: 14pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 20pt;
+}
+
+div.info {
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.5);
+	padding: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+#link {
+	margin-top: 30px;
+	margin-left: 10%;
+}
